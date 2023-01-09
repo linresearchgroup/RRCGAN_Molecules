@@ -26,7 +26,7 @@ in particular in generative models, for the generation of molecular graphs
 which are syntactically and semantically valid.
 
 <p align="center">
-   <img src="https://github.com/linresearchgroup/RRCGAN_Molecules/Picture1.png" alt="SELFIES validity in a VAE latent space" width="666px">
+   <img src="https://github.com/sattarik/RRCGAN_Molecules/Picture1.png" alt="SELFIES validity in a VAE latent space" width="666px">
 </p>
 
 ## Installation
