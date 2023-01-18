@@ -8,7 +8,7 @@ RRCGAN is a deep generative model using a Generative Adversarial Network (GAN) c
 
 - [Overview](#overview)
 - [System Requirements](#system-requirements)
-- [Installation Guide](# Installation Guide)
+- [Installation Guide](#installation-guide)
 - [License](#license)
 
 # Overview
