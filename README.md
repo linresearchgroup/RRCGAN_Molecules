@@ -4,7 +4,7 @@ Submitted to Nature Computational Science.
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
-RRCGAN is a deep generative model using a Generative Adversarial Network (GAN) cmobined with a Regressor to generate molecules with targeted properties. It is puerly run in Python. Using GPU is necessary, otherwise the running takes a lot!
+RRCGAN is a deep generative model using a Generative Adversarial Network (GAN) combined with a Regressor to generate molecules with targeted properties. It is puerly run in Python. Using GPU is necessary, otherwise running the code takes a lot!
 
 - [Overview](#overview)
 - [System Requirements](#system-requirements)
@@ -21,7 +21,7 @@ RRCGAN is a deep generative model using a Generative Adversarial Network (GAN) c
 
 ## Software requirements
 ### Python Dependencies
-`RRCGAN` mainly depends on the Python scientific stack, Keras form Tensorflow, and RDKit.
+`RRCGAN` mainly depends on the Python scientific stack, Keras form Tensorflow, and chemistry tools chainer chemistry and RDKit.
 
 ```
 numpy
@@ -37,10 +37,9 @@ RDKit
 ```
 
 # Installation Guide:
-The only challenge for running the model is to set up the Tensorflow-gpu. One should follow specific version of Tensorflow and Nvidia drivers to make it work. The necessary packages and the built conda environment used is `environment.yml`.
+The only challenge for running the model is to set up the Tensorflow-gpu. One should install specific version of Tensorflow and Nvidia drivers to make it work. The necessary packages and the built conda environment used is mentioned in `environment.yml`.
 We primarily used Lewis Cluster from University of Missouri-Columbia for running the code. The following is the information of a personal machine that was tested for running the tensorflow on GPU. 
 -GPU Nvidia RTX 2080 Super, Cuda version: 10.1, cuDNN: 7.6, Tensorflow: 2.11.0
-
 
 # License
 This project is covered under the **Apache 2.0 License**.
