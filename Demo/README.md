@@ -7,7 +7,8 @@ For the real experiment, we train the model on ~60,000 training samples (close t
 will generate the necessary training and testing data by downloading QM9 library and sampling from it.
 Running that file generates "./image_train_demo.pickle", "./image_test_demo.pickle", and "./tokenizer.pickle"
 
-"./image_train_demo.pickle" and "./image_test_demo.pickle": include information about the samples (their SMILES strings, one-hot encoded, bond and atom information, and Cv values).
+### "./image_train_demo.pickle" 
+### "./image_test_demo.pickle": include information about the samples (their SMILES strings, one-hot encoded, bond and atom information, and Cv values).
 "./tokenizer.pickle" includes the mapping from SMILES strings to their one-hot encoded. We save it to use the same mapping through the entire process. 
 
 # Running "embedding_version_0_3_60ksam_encodernewinput.py" 
