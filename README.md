@@ -37,7 +37,7 @@ RDKit
 ```
 
 # Installation Guide:
-The only challenge for running the model is to set up the Tensorflow-gpu. One should install specific version of Tensorflow and Nvidia drivers to make it work. The necessary packages and the built conda environment used is mentioned in `environment.yml`.
+The only challenge for running the model is to set up the Tensorflow-gpu. One should install specific version of Tensorflow and Nvidia drivers to make it work. The necessary packages and the built conda environment used is mentioned in `environment.yml`. Installing the whole packages and running Tensorflow-gpu may take 30-60 mins. 
 We primarily used Lewis Cluster from University of Missouri-Columbia for running the code. The following is the information of a personal machine that was tested for running the tensorflow on GPU. 
 -GPU Nvidia RTX 2080 Super, Cuda version: 10.1, cuDNN: 7.6, Tensorflow: 2.11.0
 
