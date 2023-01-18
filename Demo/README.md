@@ -1,4 +1,3 @@
-
 For demo purposes, we put a complete set of codes and datasets in Demo folder. 
 We reduced the number of training samples in order to keep the size under 25MB for uploading in Github. 
 For the real experiment, we train the model on ~60,000 training samples (close to half of original QM9 samples). 
@@ -26,7 +25,7 @@ Ideally, they should be the same. For demo, we only run it for 10 epochs. Also, 
 # Running "main_version_0_5_training_normaltrain.py"
 After training and saving the Encoder and Decoder, one needs to run the main model, named "main_version_0_5_training_normaltrain.py". First, it uses the saved encoder and decoder to train the regressor. The trained regressor then is used inside the GAN model to generate molecules with targeted (desired) properties. 
 When it is running, the code print the following:
-### printing
+### Printing
 Current epoch: 1/1
 1) D Loss Real: Discriminator loss for detecting real samples. 
 2) D Loss Fake: Discriminator loss for detecting fake samples. 
@@ -40,8 +39,8 @@ Current epoch: 1/1
 9) Currently valid Unique SMILES Sanitized: Unique, valid, and chemically sanitized samples out of 1000
 10) Currently satisfying SMILES: Valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy. 
 11) Currently unique satisfying generation: Unique, valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy.
-### output
+### Output
 Finally, the main model generate the final samples within the targeted range. It will print the accuracy of the model on generated data comparing the targeted and predicted values. It will outputs "demo.csv" and "demo_NODUP.csv" files with SMILES strings, their targeted and predicted heat capacity values, and their error in a csv format. 
 
 
-To go from demo to real running, one needs to increase the training samples to around 60K samples and run the model on more epochs to reach the desired accuracies. 
+# To go from demo to real running, one needs to increase the training samples to around 60K samples and run the model on more epochs to reach the desired accuracies. 
