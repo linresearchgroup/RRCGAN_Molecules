@@ -26,19 +26,30 @@ Ideally, they should be the same. For demo, we only run it for 10 epochs. Also, 
 After training and saving the Encoder and Decoder, one needs to run the main model, named "main_version_0_5_training_normaltrain.py". First, it uses the saved encoder and decoder to train the regressor. The trained regressor then is used inside the GAN model to generate molecules with targeted (desired) properties. 
 When it is running, the code print the following:
 ### Printing
-#### 1) Current epoch: 1/1
-2) D Loss Real: Discriminator loss for detecting real samples. 
-2) D Loss Fake: Discriminator loss for detecting fake samples. 
-4) D Loss: The average of the above that is considered discriminator loss. 
-5) G Loss: Generator loss.
-6) R Loss: Regressor loss. 
-
-7) Currently valid SMILES (No chemical_beauty and sanitize off): valid samples out of 1000 that is generated in reinforcement center. 
-8) Currently valid SMILES Unique (No chemical_beauty and sanitize off): valid and unique samples out of 1000. If the model training traps in mode collapse, there are many repetitive samples--> the number of unique and valid is far fewer than the number of valid. 
-9) Currently valid SMILES Sanitized: valid and chemically sanitized samples out of 1000
-10) Currently valid Unique SMILES Sanitized: Unique, valid, and chemically sanitized samples out of 1000
-11) Currently satisfying SMILES: Valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy. 
-12) Currently unique satisfying generation: Unique, valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy.
+#### 1) Current epoch: 
+shows the epochs count for training the overal GAN model using the trained AE and Regressor. 
+#### 2) D Loss Real: 
+Discriminator loss for detecting real samples. 
+#### 3) D Loss Fake: 
+Discriminator loss for detecting fake samples. 
+#### 4) D Loss: 
+The average of the above that is considered discriminator loss. 
+#### 5) G Loss: 
+Generator loss.
+#### 6) R Loss: 
+Regressor loss. 
+#### 7) Currently valid SMILES (No chemical_beauty and sanitize off): 
+valid samples out of 1000 that is generated in reinforcement center. 
+#### 9) Currently valid SMILES Unique (No chemical_beauty and sanitize off): 
+valid and unique samples out of 1000. If the model training traps in mode collapse, there are many repetitive samples--> the number of unique and valid is far fewer than the number of valid. 
+#### 10) Currently valid SMILES Sanitized: 
+valid and chemically sanitized samples out of 1000
+#### 11) Currently valid Unique SMILES Sanitized: 
+Unique, valid, and chemically sanitized samples out of 1000
+#### 13) Currently satisfying SMILES: 
+Valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy. 
+#### 14) Currently unique satisfying generation: 
+Unique, valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy.
 ### Output
 Finally, the main model generate the final samples within the targeted range. It will print the accuracy of the model on generated data comparing the targeted and predicted values. It will outputs "demo.csv" and "demo_NODUP.csv" files with SMILES strings, their targeted and predicted heat capacity values, and their error in a csv format. 
 
