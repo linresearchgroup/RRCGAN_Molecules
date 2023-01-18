@@ -1,0 +1,2 @@
+# the pickle files used for training have higher than 25MB and cannot be uploaded to git. 
+*.pickle
