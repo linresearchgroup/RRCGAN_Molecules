@@ -38,8 +38,8 @@ RDKit
 
 # Installation Guide:
 The only challenge for running the model is to set up the Tensorflow-gpu. One should follow specific version of Tensorflow and Nvidia drivers to make it work. The necessary packages and the built conda environment used is `environment.yml`.
-We primarily used Lewis Cluster from University of Missouri-Columbia for running the code. The following is the information of a personal machine that was used for running the code.
-GPU Nvidia RTX 2080 Super, Cuda version: 10.1, cuDNN: 7.6, Tensorflow: 2.11.0
+We primarily used Lewis Cluster from University of Missouri-Columbia for running the code. The following is the information of a personal machine that was tested for running the tensorflow on GPU. 
+-GPU Nvidia RTX 2080 Super, Cuda version: 10.1, cuDNN: 7.6, Tensorflow: 2.11.0
 
 
 # License
