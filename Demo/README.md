@@ -51,7 +51,9 @@ Valid, chemically sanitized, and within 20% error samples out of 1000. We compar
 #### 14) Currently unique satisfying generation: 
 Unique, valid, chemically sanitized, and within 20% error samples out of 1000. We compare the predicted value from Regressor and targeted value to calculate the accuracy.
 ### Output
-Finally, the main model generate the final samples within the targeted range. It will print the accuracy of the model on generated data comparing the targeted and predicted values. It will outputs "demo.csv" and "demo_NODUP.csv" files with SMILES strings, their targeted and predicted heat capacity values, and their error in a csv format. 
+Finally, the main model generate the final samples within the targeted range. It will print the accuracy of the model on generated data comparing the targeted and predicted values. 
+
+It will outputs "demo.csv" and "demo_NODUP.csv" files with SMILES strings, their targeted and predicted heat capacity values, and their error in a csv format. "demo.csv" includes all generated samples and "demo_NODUP.csv" includes only unique samples. 
 
 
 # To go from demo to real running, one needs to increase the training samples to around 60K samples and run the model on more epochs to reach the desired accuracies. 
